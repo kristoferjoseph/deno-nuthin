@@ -1,12 +1,11 @@
-# Warning: do not edit
-# --------------------
-# This is a generated file and will be overwritten
-
 @app
-begin-app
+flower-p55
+
+@static
 
 @http
 get /
+get /api
 
 @tables
 data
