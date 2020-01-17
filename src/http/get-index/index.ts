@@ -13,7 +13,12 @@ let body = `
     <h1 class="center-text">
       I made a Deno 🦕
     </h1>
-
+    <p id="message"></p>
+    <script type="module" crossorigin="">
+      let msg = document.getElementById('message')
+      let result = await (await fetch('/api')).json()
+      message.innerHTML = result.message
+    </script>
   </body>
 </html>
 `
