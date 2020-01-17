@@ -1,2 +1,0 @@
-# deno-nuthin
-Begin app
