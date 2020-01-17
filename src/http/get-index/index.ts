@@ -16,8 +16,11 @@ let body = `
     <p id="message"></p>
     <script type="module" crossorigin="">
       let msg = document.getElementById('message')
-      let result = await (await fetch('/api')).json()
-      message.innerHTML = result.message
+      async function getMessage() {
+        let result = await (await fetch('/api')).json()
+        message.innerHTML = result.message
+      }
+      getMessage()
     </script>
   </body>
 </html>
